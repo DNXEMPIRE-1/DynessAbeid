@@ -1,4 +1,4 @@
-Julia - I'm User Interface Designer & Developer.
+Dyness - I'm User Interface Designer & Developer.
 
 This is a personal portfolio html template made by Dyness Abeid
 
@@ -6,7 +6,7 @@ This is a personal portfolio html template made by Dyness Abeid
 
 #---------- HEADER ----------#
 
-alt = Julia home
+alt = Dyness home
 
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -33,13 +33,13 @@ aria-label = open menu
 
 #---------- HERO ----------#
 
-alt = Julia
+alt = Dyness
 
 alt = 250+ Projects Done
 
 I'm User Interface Designer & Developer.
 
-Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate about the work that I do.
+Hello! I'm Dyness, a freelance user interface designer & developer based in London. I’m very passionate about the work that I do.
 
 See My Works
 Contact Me
