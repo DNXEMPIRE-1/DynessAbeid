@@ -8,7 +8,7 @@
 
 A fully responsive personal portfolio website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-<a href="https://Dyness Abeid.github.io/julia-portfolio/"><strong>➥ Live Demo</strong></a>
+<a href="https://Dyness Abeid.github.io/Dyness-portfolio/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -16,7 +16,7 @@ A fully responsive personal portfolio website, <br />Responsive for all devices,
 
 ### Demo Screeshots
 
-![Julia Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Dyness Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -26,18 +26,18 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Julia** locally, run this command on your git bash:
+To run **Dyness** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/Dyness Abeid/julia-portfolio.git
+sudo git clone https://github.com/Dyness Abeid/Dyness-portfolio.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/Dyness Abeid/julia-portfolio.git
+git clone https://github.com/Dyness Abeid/Dyness-portfolio.git
 ```
 
 ### Contact
