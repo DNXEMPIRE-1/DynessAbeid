@@ -1,15 +1,10 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/Dyness Abeid/julia-portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/Dyness Abeid/julia-portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/Dyness Abeid/julia-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/Dyness Abeid_?style=social)](https://twitter.com/intent/follow?screen_name=Dyness Abeid_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/wjqiFCTssTI?style=social)](https://youtu.be/wjqiFCTssTI)
-
+  
   <br />
   <br />
 
-  <h2 align="center">Julia - Portfolio Website</h2>
+  <h2 align="center">Dyness - Portfolio Website</h2>
 
 A fully responsive personal portfolio website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
