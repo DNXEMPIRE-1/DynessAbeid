@@ -1,6 +1,6 @@
 Julia - I'm User Interface Designer & Developer.
 
-This is a personal portfolio html template made by codewithsadee
+This is a personal portfolio html template made by Dyness Abeid
 
 
 
@@ -152,7 +152,7 @@ Send message
 
 #---------- FOOTER ----------#
 
-© 2022 codewithsadee. All rights reserved.
+© 2024 Dyness Abeid. All rights reserved.
 
 <ion-icon name="logo-twitter"></ion-icon>
 <ion-icon name="logo-facebook"></ion-icon>
