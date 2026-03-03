@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className={`absolute inset-0 bg-gradient-to-b from-charcoal/80 to-transparent backdrop-blur-[4px] pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-40`} />
       
       <Link to="/" className="font-serif italic font-black text-3xl md:text-4xl text-cream pointer-events-auto interactive group tracking-tighter relative z-10" data-cursor="DK.HOME">
-         Dynes <span className="text-gold">K.</span>
+         Dyness <span className="text-gold">K.</span>
       </Link>
       
       <div className="flex items-center gap-16 relative z-10">
