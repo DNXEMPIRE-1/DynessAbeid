@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-charcoal: #0a0a0a;
+    --text-cream: #f4f2ee;
+    --accent-gold: #c5a363;
+    --accent-sage: #8e9a8a;
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-[#f4f2ee] font-sans antialiased selection:bg-gold selection:text-black;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  canvas {
+    @apply fixed top-0 left-0 w-full h-full z-0;
+  }
+
+  /* Custom Scrollbar for High-End Vibe */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold/10 rounded-full hover:bg-gold/30 transition-colors;
+  }
+
+  /* Cinematic Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    @apply uppercase tracking-tighter leading-[0.85];
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-serif {
+    @apply italic tracking-tight;
+  }
+
+  /* Ultra-Premium Glassmorphism */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(197, 163, 99, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .glass-card:hover {
+    border: 1px solid rgba(197, 163, 99, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Golden Mesh Gradients */
+  .bg-gold-mesh {
+    background-color: #0a0a0a;
+    background-image:
+      radial-gradient(at 0% 0%, hsla(40, 50%, 40%, 0.15) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(45, 60%, 50%, 0.1) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(35, 40%, 30%, 0.15) 0, transparent 50%);
+  }
+
+  /* Editorial Hover Effects */
+  .hover-reveal {
+    @apply relative overflow-hidden;
+  }
+
+  .hover-reveal::after {
+    content: '';
+    @apply absolute inset-0 bg-gold/10 opacity-0 transition-opacity duration-700;
+  }
+
+  .hover-reveal:hover::after {
+    @apply opacity-100;
+  }
+
+  /* Cinematic Masking */
+  .mask-radial {
+    mask-image: radial-gradient(circle at center, black 0%, transparent 100%);
+  }
+
+  /* Scroll Progress */
+  .scroll-progress {
+    @apply fixed top-0 left-0 h-1 bg-gold z-[2000] origin-left;
+  }
+}
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Archivo Black", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-gold: #c5a363;
+  --color-sage: #8e9a8a;
+  --color-charcoal: #0a0a0a;
+  --color-cream: #f4f2ee;
+}
+
+/* UI Overlays */
+.overlay {
+  @apply relative z-10 pointer-events-none;
+}
+
+.overlay * {
+  @apply pointer-events-auto;
+}
+
+/* Interactions */
+.interactive {
+  @apply cursor-pointer;
+}
+
+/* Typography Extensions */
+.text-outline {
+  -webkit-text-stroke: 1px rgba(197, 163, 99, 0.3);
+  color: transparent;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(197, 163, 99, 0.4);
+}
+
+/* Artistic Utilities */
+.blend-art {
+  mix-blend-mode: exclusion;
+}
+
+.organic-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* Section Spacing */
+.section-v-pad {
+  @apply py-12 md:py-24;
+}
+
+/* Global Transition */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 800ms, transform 800ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 800ms, transform 800ms;
+}
+
+/* Animations */
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim-spin {
+  animation: rot 20s linear infinite;
+}

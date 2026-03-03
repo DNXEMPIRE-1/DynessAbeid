@@ -1,49 +1,12 @@
-<div align="center">
-  
-  
-  <br />
-  <br />
+# React + Vite
 
-  <h2 align="center">Dyness - Portfolio Website</h2>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A fully responsive personal portfolio website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+Currently, two official plugins are available:
 
-<a href="https://dynessabeid.vercel.app/"><strong>➥ Live Demo</strong></a>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-</div>
+## Expanding the ESLint configuration
 
-<br />
-
-### Demo Screeshots
-
-![Dyness Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Dyness** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/Dyness Abeid/Dyness-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/Dyness Abeid/Dyness-portfolio.git
-```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/DynessAbeid).
-
-### License
-
-This project is **free to use** and does not contains any license.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
