@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="relative min-h-screen py-40 px-6 md:px-20 lg:px-32 z-10 flex flex-col justify-between items-center bg-black text-center text-cream overflow-hidden border-t border-white/5">
+    <footer className="relative min-h-screen py-40 px-6 md:px-20 lg:px-32 z-10 flex flex-col justify-between items-center bg-cream text-center text-charcoal overflow-hidden border-t border-charcoal/10">
       
       {/* Editorial Watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02]">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
          <span className="text-[35vw] font-serif font-black italic transform -rotate-12 whitespace-nowrap select-none">Impact.</span>
       </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
          </motion.div>
 
-         <div className="w-full h-px bg-white/5" />
+         <div className="w-full h-px bg-charcoal/10" />
 
          <div className="grid grid-cols-1 md:grid-cols-3 gap-24 w-full text-left">
             <div className="space-y-8">
@@ -65,10 +65,7 @@ const Footer = () => {
                <div className="text-[10px] font-bold tracking-[0.2em] uppercase space-y-4">
                   <p className="opacity-40 italic font-serif">© 2026 Dyness Kazala</p>
                   <p className="opacity-20 italic font-serif">Visual Communication Designer & Creative Consultant</p>
-                  <div className="pt-8 flex flex-col items-end gap-2">
-                     <span className="opacity-20">Developed by</span>
-                     <a href="https://crystalogic.pro" className="bg-white/5 px-6 py-3 rounded-full hover:bg-gold hover:text-black transition-all">Crystalogic Solutions</a>
-                  </div>
+                 
                </div>
             </div>
          </div>

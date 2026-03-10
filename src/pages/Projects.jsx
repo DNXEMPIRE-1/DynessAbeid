@@ -24,6 +24,19 @@ const Projects = () => {
     { type: 'video', src: '/projects/VID-20260303-WA0048.mp4', label: 'Motion Aura' },
     { type: 'video', src: '/projects/VID-20260303-WA0049.mp4', label: 'Kinetic Soul' },
     { type: 'image', src: '/projects/IMG-20260303-WA0047.jpg', label: 'Institutional Logic' },
+    { type: 'image', src: '/projects/daressalaaam.jpg', label: 'Metropolitan Aura' },
+    { type: 'image', src: '/projects/safari.jpg', label: 'Wild Perspective' },
+    { type: 'image', src: '/projects/environmentday.jpg', label: 'Eco Narrative' },
+    { type: 'image', src: '/projects/independencedaytz.jpg', label: 'National Identity' },
+    { type: 'image', src: '/projects/womensday.jpg', label: 'Empowerment Frame' },
+    { type: 'image', src: '/projects/concert.jpg', label: 'Sonic Motion' },
+    { type: 'image', src: '/projects/cooldesign.jpg', label: 'Modern Logic' },
+    { type: 'image', src: '/projects/sport.jpg', label: 'Kinetic Energy' },
+    { type: 'image', src: '/projects/biryani.jpg', label: 'Culinary Art' },
+    { type: 'image', src: '/projects/food.jpg', label: 'Gastronomy' },
+    { type: 'image', src: '/projects/drip.jpg', label: 'Artisan Style' },
+    { type: 'image', src: '/projects/party.jpg', label: 'Social Soul' },
+    { type: 'image', src: '/projects/camp.jpg', label: 'Expedition Flow' },
     { type: 'image', src: '/projects/IMG-20260225-WA0056.jpg', label: 'Strategic Frame' },
     { type: 'image', src: '/projects/IMG-20260303-WA0046.jpg', label: 'Visual Poetry' },
     { type: 'image', src: '/projects/IMG-20260303-WA0050.jpg', label: 'Narrative Flow' },
@@ -52,7 +65,7 @@ const Projects = () => {
           <h1 className="text-[14vw] md:text-[10vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
              The Curated <br /> <span className="text-gold font-serif not-italic text-outline uppercase">Catalogue.</span>
           </h1>
-          <p className="max-w-4xl mt-12 text-2xl md:text-3xl font-serif italic text-gold/40 leading-relaxed font-light mx-auto border-x border-gold/10 px-12 uppercase tracking-wide">
+          <p className="max-w-4xl mt-12 text-2xl md:text-3xl font-serif italic text-charcoal/60 leading-relaxed font-light mx-auto border-x border-gold/20 px-12 uppercase tracking-wide">
              A complete visual legacy of highlights across institutional reporting, strategic communication, and <span className="text-gold font-bold">visual poetry.</span>
           </p>
         </motion.div>
@@ -77,13 +90,13 @@ const Projects = () => {
               >
                 <div 
                    onClick={() => setActiveAsset(asset)}
-                   className="glass-card rounded-[40px] md:rounded-[60px] overflow-hidden border-gold/5 bg-white/[0.01] relative isolate group cursor-pointer shadow-2xl transition-all duration-700 hover:border-gold/20" 
+                   className="glass-card rounded-[40px] md:rounded-[60px] overflow-hidden border-gold/10 bg-charcoal/[0.01] relative isolate group cursor-pointer shadow-2xl transition-all duration-700 hover:border-gold/30" 
                    data-cursor="VIEW"
                 >
                    {asset.type === 'video' ? (
                      <video 
                        src={asset.src} 
-                       className="w-full grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100"
+                       className="w-full transition-all duration-1000 opacity-90 group-hover:opacity-100 scale-105 group-hover:scale-100"
                        autoPlay 
                        loop 
                        muted 
@@ -93,14 +106,14 @@ const Projects = () => {
                      <img 
                        src={asset.src} 
                        alt={asset.label} 
-                       className="w-full grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100"
+                       className="w-full transition-all duration-1000 opacity-90 group-hover:opacity-100 scale-105 group-hover:scale-100"
                      />
                    )}
                    
-                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-12 pointer-events-none">
+                   <div className="absolute inset-0 bg-gradient-to-t from-cream/95 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-12 pointer-events-none">
                       <div className="space-y-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
-                         <span className="text-[8px] font-bold uppercase tracking-[0.5em] text-gold/60 italic">Exhibition Piece #{(i+1).toString().padStart(2, '0')}</span>
-                         <h4 className="text-2xl md:text-3xl font-serif italic text-cream leading-none">{asset.label}</h4>
+                         <span className="text-[8px] font-bold uppercase tracking-[0.5em] text-gold italic">Exhibition Piece #{(i+1).toString().padStart(2, '0')}</span>
+                          <h4 className="text-2xl md:text-3xl font-serif italic text-charcoal leading-none">{asset.label}</h4>
                       </div>
                       <div className="absolute top-8 right-8 size-12 bg-gold/90 rounded-full flex items-center justify-center text-black -rotate-45 group-hover:rotate-0 transition-transform shadow-xl scale-0 group-hover:scale-100">
                          <Plus size={24} />
@@ -108,7 +121,7 @@ const Projects = () => {
                    </div>
                    
                    {asset.type === 'video' && (
-                     <div className="absolute top-8 left-8 size-10 rounded-full bg-black/40 backdrop-blur-md flex items-center justify-center text-gold border border-gold/20">
+                      <div className="absolute top-8 left-8 size-10 rounded-full bg-cream/40 backdrop-blur-md flex items-center justify-center text-gold border border-gold/20">
                         <MonitorPlay size={18} strokeWidth={1} />
                      </div>
                    )}
@@ -125,7 +138,7 @@ const Projects = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[2000] bg-black/98 flex items-center justify-center p-4 md:p-12 lg:p-24"
+            className="fixed inset-0 z-[2000] bg-white/98 flex items-center justify-center p-4 md:p-12 lg:p-24"
             onClick={() => setActiveAsset(null)}
           >
             <motion.div 
@@ -138,13 +151,13 @@ const Projects = () => {
             >
               <button 
                 onClick={() => setActiveAsset(null)}
-                className="absolute top-0 right-0 md:-top-16 md:-right-16 text-cream/40 hover:text-gold transition-colors interactive group p-4"
+                 className="absolute top-0 right-0 md:-top-16 md:-right-16 text-charcoal/40 hover:text-gold transition-colors interactive group p-4"
                 data-cursor="CLOSE"
               >
                  <X size={48} strokeWidth={1} className="group-hover:rotate-90 transition-transform duration-700" />
               </button>
               
-              <div className="w-full h-full glass-card rounded-[40px] md:rounded-[80px] overflow-hidden border-white/5 flex items-center justify-center bg-transparent">
+              <div className="w-full h-full glass-card rounded-[40px] md:rounded-[80px] overflow-hidden border-charcoal/10 flex items-center justify-center bg-transparent">
                 {activeAsset.type === 'video' ? (
                   <video 
                     src={activeAsset.src} 
@@ -162,24 +175,24 @@ const Projects = () => {
                 )}
               </div>
 
-              <div className="absolute -bottom-16 left-0 text-left space-y-2 hidden md:block">
-                 <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-gold/40 italic">In-View Exhibition</span>
-                 <h4 className="text-3xl font-serif italic text-cream leading-none">{activeAsset.label}</h4>
-              </div>
+               <div className="absolute -bottom-16 left-0 text-left space-y-2 hidden md:block">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-gold italic">In-View Exhibition</span>
+                  <h4 className="text-3xl font-serif italic text-charcoal leading-none">{activeAsset.label}</h4>
+               </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* 🚀 THE NEXT EXHIBITION - Final Engagement */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-black">
-         <div className="max-w-5xl mx-auto glass-card p-24 md:p-32 rounded-[100px] space-y-16 border-gold/5 relative overflow-hidden bg-white/[0.01]">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-cream">
+          <div className="max-w-5xl mx-auto glass-card p-24 md:p-32 rounded-[100px] space-y-16 border-gold/10 relative overflow-hidden bg-charcoal/[0.01]">
             <h4 className="text-5xl md:text-[9vw] font-display uppercase tracking-tighter leading-none italic mix-blend-exclusion">Let's Craft your <br /> <span className="text-gold font-serif not-italic text-outline uppercase tracking-tight">Vision.</span></h4>
-            <p className="text-xl md:text-3xl font-serif italic text-cream/40 max-w-2xl mx-auto leading-relaxed font-light opacity-60 border-x border-gold/10 px-16 italic">
-               Ready to transform institutional metrics into <span className="text-gold font-bold">visual poetry?</span>
-            </p>
+             <p className="text-xl md:text-3xl font-serif italic text-charcoal/80 max-w-2xl mx-auto leading-relaxed font-light border-x border-gold/20 px-16 italic">
+                Ready to transform institutional metrics into <span className="text-gold font-bold">visual poetry?</span>
+             </p>
             <div className="pt-12">
-               <Link to="/contact" className="inline-block bg-gold text-black px-12 md:px-24 py-6 md:py-12 rounded-full font-display uppercase tracking-widest text-[12px] md:text-[14px] shadow-[0_40px_100px_rgba(197,163,99,0.2)] hover:bg-cream transition-all duration-700 interactive" data-cursor="ACTION">
+                <Link to="/contact" className="inline-block bg-gold text-white px-12 md:px-24 py-6 md:py-12 rounded-full font-display uppercase tracking-widest text-[12px] md:text-[14px] shadow-[0_40px_100px_rgba(197,163,99,0.2)] hover:bg-charcoal transition-all duration-700 interactive" data-cursor="ACTION">
                   Initiate Engagement
                </Link>
             </div>

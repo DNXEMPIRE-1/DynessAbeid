@@ -76,7 +76,7 @@ const CustomCursor = () => {
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-cream transition-colors duration-1000">
+    <div className="bg-cream min-h-screen text-charcoal transition-colors duration-1000">
       <CustomCursor />
       <Experience />
       <Navbar />

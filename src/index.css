@@ -2,14 +2,14 @@
 
 @layer base {
   :root {
-    --bg-charcoal: #0a0a0a;
-    --text-cream: #f4f2ee;
+    --bg-cream: #faf9f6;
+    --text-charcoal: #121212;
     --accent-gold: #c5a363;
     --accent-sage: #8e9a8a;
   }
 
   body {
-    @apply bg-[#0a0a0a] text-[#f4f2ee] font-sans antialiased selection:bg-gold selection:text-black;
+    @apply bg-cream text-charcoal font-sans antialiased selection:bg-gold/20 selection:text-charcoal;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
@@ -33,11 +33,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-black;
+    @apply bg-cream;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gold/10 rounded-full hover:bg-gold/30 transition-colors;
+    @apply bg-gold/20 rounded-full hover:bg-gold/40 transition-colors;
   }
 
   /* Cinematic Typography */
@@ -56,24 +56,24 @@
 
   /* Ultra-Premium Glassmorphism */
   .glass-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(197, 163, 99, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(197, 163, 99, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
   }
 
   .glass-card:hover {
-    border: 1px solid rgba(197, 163, 99, 0.3);
-    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(197, 163, 99, 0.4);
+    background: rgba(255, 255, 255, 0.6);
   }
 
   /* Golden Mesh Gradients */
   .bg-gold-mesh {
-    background-color: #0a0a0a;
+    background-color: #faf9f6;
     background-image:
-      radial-gradient(at 0% 0%, hsla(40, 50%, 40%, 0.15) 0, transparent 50%),
-      radial-gradient(at 50% 0%, hsla(45, 60%, 50%, 0.1) 0, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(35, 40%, 30%, 0.15) 0, transparent 50%);
+      radial-gradient(at 0% 0%, hsla(40, 50%, 80%, 0.3) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(45, 60%, 85%, 0.2) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(35, 40%, 80%, 0.3) 0, transparent 50%);
   }
 
   /* Editorial Hover Effects */
@@ -108,8 +108,8 @@
 
   --color-gold: #c5a363;
   --color-sage: #8e9a8a;
-  --color-charcoal: #0a0a0a;
-  --color-cream: #f4f2ee;
+  --color-charcoal: #121212;
+  --color-cream: #faf9f6;
 }
 
 /* UI Overlays */

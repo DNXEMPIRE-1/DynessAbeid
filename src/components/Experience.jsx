@@ -36,7 +36,7 @@ const ArtisticFloatingShapes = () => {
               <boxGeometry args={[0.8, 0.8, 0.8]} />
             )}
             <MeshDistortMaterial 
-              color={i % 2 === 0 ? "#c5a363" : "#f4f2ee"} 
+              color={i % 2 === 0 ? "#c5a363" : "#121212"} 
               opacity={0.15} 
               transparent 
               metalness={0.9} 
@@ -86,7 +86,7 @@ const VisionCore = () => {
          </mesh>
          <mesh scale={4} rotation={[0.5, 0.3, 0]}>
             <torusGeometry args={[1, 0.005, 16, 100]} />
-            <meshStandardMaterial color="#f4f2ee" opacity={0.1} transparent />
+            <meshStandardMaterial color="#121212" opacity={0.1} transparent />
          </mesh>
       </group>
     </group>
@@ -95,34 +95,34 @@ const VisionCore = () => {
 
 const Experience = () => {
   return (
-    <div className="fixed inset-0 z-0 bg-[#050505]">
+    <div className="fixed inset-0 z-0 bg-cream">
       <Canvas shadows camera={{ position: [0, 0, 10], fov: 35 }}>
         <PerspectiveCamera makeDefault position={[0, 0, 10]} />
-        <ambientLight intensity={0.4} />
-        <pointLight position={[10, 10, 10]} intensity={1.5} color="#c5a363" />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#8e9a8a" />
-        <spotLight position={[0, 10, 0]} angle={0.3} penumbra={1} intensity={2} color="#f4f2ee" />
+        <ambientLight intensity={1.5} />
+        <pointLight position={[10, 10, 10]} intensity={2} color="#c5a363" />
+        <pointLight position={[-10, -10, -10]} intensity={1} color="#8e9a8a" />
+        <spotLight position={[0, 10, 0]} angle={0.3} penumbra={1} intensity={3} color="#ffffff" />
         
         <Rig />
         <ArtisticFloatingShapes />
         <VisionCore />
-        <Sparkles count={50} scale={15} size={1} speed={0.4} opacity={0.2} color="#c5a363" />
+        <Sparkles count={50} scale={15} size={1} speed={0.4} opacity={0.1} color="#c5a363" />
         
-        <Environment preset="night" />
+        <Environment preset="studio" />
         
         <ContactShadows 
-          opacity={0.3} 
+          opacity={0.15} 
           scale={30} 
           blur={3} 
           far={10} 
           resolution={256} 
-          color="#000000" 
+          color="#c5a363" 
           position={[0, -5, 0]}
         />
       </Canvas>
       {/* Atmospheric overlays */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(5,5,5,0.7)_100%)]" />
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(250,249,246,0.5)_100%)]" />
+      <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')]" />
     </div>
   )
 }

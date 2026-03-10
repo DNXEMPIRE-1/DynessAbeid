@@ -43,30 +43,30 @@ const Navbar = () => {
       variants={navVariants}
       animate={isOpen || isVisible ? "visible" : "hidden"}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 left-0 w-full p-8 md:p-12 z-[1000] flex justify-between items-center pointer-events-none"
+      className="fixed top-0 left-0 w-full px-6 py-0 md:px-12 md:py-0 z-[1000] flex justify-between items-center pointer-events-none"
     >
-      <div className={`absolute inset-0 bg-gradient-to-b from-charcoal/80 to-transparent backdrop-blur-[4px] pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-40`} />
+      <div className={`absolute inset-x-0 top-0 bg-cream/90 backdrop-blur-[12px] border-b border-charcoal/5 pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-16 md:h-20`} />
       
-      <Link to="/" className="font-serif italic font-black text-3xl md:text-4xl text-cream pointer-events-auto interactive group tracking-tighter relative z-10" data-cursor="DK.HOME">
+      <Link to="/" className="font-serif italic font-black text-2xl md:text-4xl text-charcoal pointer-events-auto interactive group tracking-tighter relative z-10 py-4" data-cursor="DK.HOME">
          Dyness <span className="text-gold">K.</span>
       </Link>
       
       <div className="flex items-center gap-16 relative z-10">
-        <div className="hidden lg:flex gap-16 font-black uppercase tracking-[0.5em] text-[11px] items-center pointer-events-auto">
+        <div className="hidden lg:flex gap-16 font-black uppercase tracking-[0.5em] text-[13px] items-center pointer-events-auto">
           {menuItems.map((item) => (
-            <Link key={item.name} to={item.path} className={`hover:text-gold transition-all duration-500 hover:tracking-[0.7em] ${location.pathname === item.path ? 'text-gold' : 'text-cream'}`}>
+            <Link key={item.name} to={item.path} className={`hover:text-gold transition-all duration-500 hover:tracking-[0.7em] ${location.pathname === item.path ? 'text-gold' : 'text-charcoal'}`}>
               {item.name}
             </Link>
           ))}
         </div>
         
         <div 
-          className="group cursor-pointer flex flex-col items-end gap-2.5 pointer-events-auto p-4" 
+          className="group cursor-pointer flex flex-col items-end gap-2 pointer-events-auto px-4 py-4" 
           onClick={() => setIsOpen(true)}
           data-cursor="MENU"
         >
-          <div className="w-12 h-[1px] bg-gold shadow-gold/40 shadow-xl transition-all group-hover:w-20" />
-          <div className="w-8 h-[1px] bg-cream transition-all group-hover:w-12 group-hover:bg-gold" />
+          <div className="w-10 h-[1px] bg-gold transition-all duration-500 group-hover:w-16" />
+          <div className="w-6 h-[1px] bg-charcoal transition-all duration-500 group-hover:w-10 group-hover:bg-gold" />
         </div>
       </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
-            className="fixed inset-0 bg-[#050505] text-cream z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
+            className="fixed inset-0 bg-cream text-charcoal z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
           >
             <div className="w-full flex justify-between items-start">
                <span className="text-[10px] font-bold uppercase tracking-[1em] text-gold/30 italic">Artisan Navigation Flow</span>
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <Link 
                     to={item.path} 
                     onClick={() => setIsOpen(false)}
-                    className="text-6xl md:text-[8vw] font-serif italic text-cream/90 hover:text-gold transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
+                    className="text-6xl md:text-[8vw] font-serif italic text-charcoal/90 hover:text-gold transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
                   >
                     <span className="text-[1.5vw] font-display text-gold/5 group-hover:text-gold/20 transition-colors uppercase not-italic">Art.{i+1}</span>
                     {item.name}
@@ -108,14 +108,14 @@ const Navbar = () => {
               ))}
             </div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-white/5">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-charcoal/5">
                 <div className="space-y-4">
                    <p className="text-[9px] font-bold uppercase tracking-widest opacity-20">Direct Engagement</p>
                    <a href="mailto:hello@dyness.pro" className="text-xl font-serif italic text-gold/60 hover:text-gold transition-colors">hello@dyness.pro</a>
                 </div>
                 <div className="space-y-4">
                    <p className="text-[9px] font-bold uppercase tracking-widest opacity-20">Creative Base</p>
-                   <p className="text-xl font-serif italic text-cream/40">Tanzania | Regional East Africa</p>
+                   <p className="text-xl font-serif italic text-charcoal/40">Tanzania | Regional East Africa</p>
                 </div>
                 <div className="flex flex-wrap gap-8 text-[9px] font-bold tracking-[0.4em] uppercase opacity-40 items-end justify-end">
                    <a href="#" className="hover:text-gold transition-colors">Instagram</a>
