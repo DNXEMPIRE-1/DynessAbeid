@@ -26,14 +26,14 @@ const Services = () => {
            {...reveal}
            className="relative max-w-6xl pt-20"
         >
-          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-gold/80 mb-12 flex items-center justify-center gap-8 italic">
-             <Sparkles size={14} className="opacity-40" /> Creative Offerings <Sparkles size={14} className="opacity-40" />
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
+             <Sparkles size={14} className="" /> Creative Offerings <Sparkles size={14} className="" />
           </span>
           <h1 className="text-[12vw] md:text-[10vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
-             Artisan <br /> <span className="text-gold font-serif not-italic text-outline uppercase">Verticals.</span>
+             Artisan <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Verticals.</span>
           </h1>
-          <p className="max-w-4xl mt-24 text-2xl md:text-3xl font-serif italic text-charcoal/60 leading-relaxed font-light mx-auto border-x border-gold/20 px-16 uppercase tracking-widest">
-             Ensuring your institutional visual language commands regional authority through <span className="text-gold font-bold">bespoke artistic excellence.</span>
+          <p className="max-w-4xl mt-24 text-2xl md:text-3xl font-serif italic /60 leading-relaxed font-light mx-auto border-x border-gold/20 px-16 uppercase tracking-widest">
+             Ensuring your institutional visual language commands regional authority through <span className="text-yellow-500 font-bold">bespoke artistic excellence.</span>
           </p>
         </motion.div>
         
@@ -76,22 +76,22 @@ const Services = () => {
                 className="group p-16 md:p-24 glass-card rounded-[100px] space-y-24 flex flex-col justify-between h-full hover:bg-gold/5 border-gold/5 transition-all duration-1000 backdrop-blur-3xl overflow-hidden relative"
               >
                  <div className="space-y-16">
-                    <div className="size-24 rounded-full bg-gold/5 flex items-center justify-center text-gold/60 group-hover:bg-gold group-hover:text-black group-hover:scale-110 transition-all duration-700 border border-gold/10">
+                    <div className="size-24 rounded-full bg-gold/5 flex items-center justify-center text-yellow-500/60 group-hover:bg-gold group-hover:text-black group-hover:scale-110 transition-all duration-700 border border-gold/10">
                        {React.cloneElement(serv.icon, { size: 40, strokeWidth: 1 })}
                     </div>
                     <div className="space-y-8">
-                       <h3 className="text-4xl md:text-6xl font-display uppercase italic tracking-tighter group-hover:text-gold transition-colors duration-700 leading-none">{serv.title}</h3>
-                       <p className="text-xl md:text-2xl opacity-60 italic font-serif leading-relaxed font-light group-hover:opacity-100 group-hover:text-charcoal transition-all duration-700">
+                       <h3 className="text-4xl md:text-6xl font-display uppercase italic tracking-tighter group-hover:text-yellow-500 transition-colors duration-700 leading-none">{serv.title}</h3>
+                       <p className="text-xl md:text-2xl  italic font-serif leading-relaxed font-light group-hover:opacity-100 group-hover: transition-all duration-700">
                           {serv.desc}
                        </p>
                     </div>
                  </div>
 
                  <div className="pt-20 border-t border-charcoal/10 space-y-10">
-                    <span className="text-[10px] font-bold uppercase tracking-[1em] text-gold/60 italic block">Creative Focus Points</span>
+                    <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/60 italic block">Creative Focus Points</span>
                     <div className="flex flex-wrap gap-6">
                        {serv.feat.map((f, fi) => (
-                          <span key={fi} className="text-[10px] uppercase font-bold tracking-[0.4em] px-8 py-4 border border-charcoal/20 rounded-full opacity-60 hover:opacity-100 hover:border-gold hover:text-gold transition-all duration-700 cursor-default">{f}</span>
+                          <span key={fi} className="text-[10px] uppercase font-bold tracking-[0.4em] px-8 py-4 border border-charcoal/20 rounded-full  hover:opacity-100 hover:border-gold hover:text-yellow-500 transition-all duration-700 cursor-default">{f}</span>
                        ))}
                     </div>
                  </div>
@@ -105,10 +105,10 @@ const Services = () => {
       {/* 🚀 STRATEGIC OUTCOME - The Flow */}
       <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-cream/50 relative">
          <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-24">
-            <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-gold/60 italic">Mission Outcome Aura</h4>
-            <h5 className="text-5xl md:text-[11vw] font-display uppercase tracking-tighter italic leading-none mix-blend-exclusion">Visual <br /> <span className="text-gold font-serif not-italic text-outline uppercase">Alchemy.</span></h5>
-            <p className="text-2xl md:text-3xl font-serif italic text-charcoal font-light max-w-4xl leading-relaxed opacity-60 border-x border-gold/10 px-12">
-               Bridging regional authority with world-class <span className="text-gold font-bold">creative depth.</span>
+            <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Mission Outcome Aura</h4>
+            <h5 className="text-5xl md:text-[11vw] font-display uppercase tracking-tighter italic leading-none mix-blend-exclusion">Visual <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Alchemy.</span></h5>
+            <p className="text-2xl md:text-3xl font-serif italic  font-light max-w-4xl leading-relaxed  border-x border-gold/10 px-12">
+               Bridging regional authority with world-class <span className="text-yellow-500 font-bold">creative depth.</span>
             </p>
             <div className="pt-24 grid grid-cols-1 md:grid-cols-4 gap-20 w-full">
                {[
@@ -118,8 +118,8 @@ const Services = () => {
                  { val: "Kinetic", label: "Data Artistry" }
                ].map((item, i) => (
                  <div key={i} className="flex flex-col items-center space-y-8 group cursor-default">
-                    <span className="text-4xl font-display italic text-gold group-hover:scale-110 transition-transform duration-700 uppercase">{item.val}</span>
-                    <span className="text-[9px] font-bold uppercase tracking-[0.5em] opacity-20 group-hover:opacity-80 transition-opacity duration-700 italic border-b border-gold/10 pb-4">{item.label}</span>
+                    <span className="text-4xl font-display italic text-yellow-500 group-hover:scale-110 transition-transform duration-700 uppercase">{item.val}</span>
+                    <span className="text-[9px] font-bold uppercase tracking-[0.5em]  group-hover:opacity-80 transition-opacity duration-700 italic border-b border-gold/10 pb-4">{item.label}</span>
                  </div>
                ))}
             </div>
@@ -132,9 +132,9 @@ const Services = () => {
       <section className="section-v-pad px-6 md:px-20 lg:px-32 border-t border-charcoal/10 bg-cream">
          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-24">
             <div className="space-y-10 text-center lg:text-left">
-               <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-gold/60 italic">Engage the Studio</h4>
-               <h5 className="text-5xl md:text-[8vw] font-display uppercase italic leading-none mix-blend-exclusion">Atelier <br /> <span className="text-gold font-serif not-italic text-outline uppercase tracking-tight">Inquiry.</span></h5>
-               <p className="opacity-60 font-serif italic text-2xl md:text-3xl font-light text-charcoal">Let's weave visual narratives for your next regional summit.</p>
+               <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Engage the Studio</h4>
+               <h5 className="text-5xl md:text-[8vw] font-display uppercase italic leading-none mix-blend-exclusion">Atelier <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Inquiry.</span></h5>
+               <p className=" font-serif italic text-2xl md:text-3xl font-light ">Let's weave visual narratives for your next regional summit.</p>
             </div>
             <Link to="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-charcoal transition-all duration-700 interactive flex items-center justify-center gap-10 shadow-[0_0_100px_rgba(197,163,99,0.3)]">
                Initiate Discussion <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1}/>
