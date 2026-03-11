@@ -64,7 +64,7 @@ const CustomCursor = () => {
              <motion.span 
                initial={{ opacity: 0, scale: 0.5 }}
                animate={{ opacity: 1, scale: 1 }}
-               className="text-[9px] font-display uppercase tracking-[0.3em] font-black text-gold"
+               className="text-[9px] font-display uppercase tracking-[0.3em] font-black text-yellow-500"
              >
                 {cursorContent}
              </motion.span>
@@ -76,7 +76,7 @@ const CustomCursor = () => {
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-cream min-h-screen text-charcoal transition-colors duration-1000">
+    <div className="bg-cream min-h-screen  transition-colors duration-1000">
       <CustomCursor />
       <Experience />
       <Navbar />

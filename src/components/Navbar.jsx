@@ -47,14 +47,14 @@ const Navbar = () => {
     >
       <div className={`absolute inset-x-0 top-0 bg-cream/90 backdrop-blur-[12px] border-b border-charcoal/5 pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-16 md:h-20`} />
       
-      <Link to="/" className="font-serif italic font-black text-2xl md:text-4xl text-charcoal pointer-events-auto interactive group tracking-tighter relative z-10 py-4" data-cursor="DK.HOME">
-         Dyness <span className="text-gold">K.</span>
+      <Link to="/" className="font-serif italic font-black text-2xl md:text-4xl  pointer-events-auto interactive group tracking-tighter relative z-10 py-4" data-cursor="DK.HOME">
+         Dyness <span className="text-yellow-500">K.</span>
       </Link>
       
       <div className="flex items-center gap-16 relative z-10">
         <div className="hidden lg:flex gap-16 font-black uppercase tracking-[0.5em] text-[13px] items-center pointer-events-auto">
           {menuItems.map((item) => (
-            <Link key={item.name} to={item.path} className={`hover:text-gold transition-all duration-500 hover:tracking-[0.7em] ${location.pathname === item.path ? 'text-gold' : 'text-charcoal'}`}>
+            <Link key={item.name} to={item.path} className={`hover:text-yellow-500 transition-all duration-500 hover:tracking-[0.7em] ${location.pathname === item.path ? 'text-yellow-500' : ''}`}>
               {item.name}
             </Link>
           ))}
@@ -78,12 +78,12 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
-            className="fixed inset-0 bg-cream text-charcoal z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
+            className="fixed inset-0 bg-cream  z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
           >
             <div className="w-full flex justify-between items-start">
-               <span className="text-[10px] font-bold uppercase tracking-[1em] text-gold/30 italic">Artisan Navigation Flow</span>
+               <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/30 italic">Artisan Navigation Flow</span>
                <button className="interactive group" onClick={() => setIsOpen(false)} data-cursor="CLOSE">
-                  <X size={40} strokeWidth={1} className="group-hover:rotate-90 group-hover:text-gold transition-all duration-700" />
+                  <X size={40} strokeWidth={1} className="group-hover:rotate-90 group-hover:text-yellow-500 transition-all duration-700" />
                </button>
             </div>
 
@@ -98,11 +98,11 @@ const Navbar = () => {
                   <Link 
                     to={item.path} 
                     onClick={() => setIsOpen(false)}
-                    className="text-6xl md:text-[8vw] font-serif italic text-charcoal/90 hover:text-gold transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
+                    className="text-6xl md:text-[8vw] font-serif italic /90 hover:text-yellow-500 transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
                   >
-                    <span className="text-[1.5vw] font-display text-gold/5 group-hover:text-gold/20 transition-colors uppercase not-italic">Art.{i+1}</span>
+                    <span className="text-[1.5vw] font-display text-yellow-500/5 group-hover:text-yellow-500/20 transition-colors uppercase not-italic">Art.{i+1}</span>
                     {item.name}
-                    <ArrowUpRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-2 transition-all duration-700 text-gold" size={60} strokeWidth={1} />
+                    <ArrowUpRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-2 transition-all duration-700 text-yellow-500" size={60} strokeWidth={1} />
                   </Link>
                 </motion.div>
               ))}
@@ -110,16 +110,16 @@ const Navbar = () => {
 
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-charcoal/5">
                 <div className="space-y-4">
-                   <p className="text-[9px] font-bold uppercase tracking-widest opacity-20">Direct Engagement</p>
-                   <a href="mailto:hello@dyness.pro" className="text-xl font-serif italic text-gold/60 hover:text-gold transition-colors">hello@dyness.pro</a>
+                   <p className="text-[9px] font-bold uppercase tracking-widest ">Direct Engagement</p>
+                   <a href="mailto:hello@dyness.pro" className="text-xl font-serif italic text-yellow-500/60 hover:text-yellow-500 transition-colors">hello@dyness.pro</a>
                 </div>
                 <div className="space-y-4">
-                   <p className="text-[9px] font-bold uppercase tracking-widest opacity-20">Creative Base</p>
-                   <p className="text-xl font-serif italic text-charcoal/40">Tanzania | Regional East Africa</p>
+                   <p className="text-[9px] font-bold uppercase tracking-widest ">Creative Base</p>
+                   <p className="text-xl font-serif italic /40">Tanzania | Regional East Africa</p>
                 </div>
-                <div className="flex flex-wrap gap-8 text-[9px] font-bold tracking-[0.4em] uppercase opacity-40 items-end justify-end">
-                   <a href="#" className="hover:text-gold transition-colors">Instagram</a>
-                   <a href="#" className="hover:text-gold transition-colors">LinkedIn</a>
+                <div className="flex flex-wrap gap-8 text-[9px] font-bold tracking-[0.4em] uppercase  items-end justify-end">
+                   <a href="#" className="hover:text-yellow-500 transition-colors">Instagram</a>
+                   <a href="#" className="hover:text-yellow-500 transition-colors">LinkedIn</a>
                 </div>
             </div>
             {/* Background Texture Overlay */}

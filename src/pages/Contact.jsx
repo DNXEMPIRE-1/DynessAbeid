@@ -20,16 +20,16 @@ const Contact = () => {
            transition={{ duration: 1.5, ease: [0.19, 1, 0.22, 1] }}
            className="relative max-w-6xl pt-20"
         >
-          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-gold/80 mb-12 flex items-center justify-center gap-8 italic">
-             <Plus size={12} className="opacity-40" /> Engagement Gateway <Plus size={12} className="opacity-40" />
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
+             <Plus size={12} className="" /> Engagement Gateway <Plus size={12} className="" />
           </span>
           <h1 className="text-[14vw] md:text-[11vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
-             Initiate <br /> <span className="text-gold font-serif not-italic text-outline uppercase">Inquiry.</span>
+             Initiate <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Inquiry.</span>
           </h1>
         </motion.div>
         
-        <p className="max-w-4xl mt-24 text-2xl md:text-4xl font-serif italic text-gold/60 leading-relaxed font-light mx-auto border-x border-gold/10 px-16 opacity-80 uppercase tracking-widest">
-          We prioritize strategic institutional engagements with a <span className="text-gold font-bold">creative soul.</span> Let's weave your next visual legacy.
+        <p className="max-w-4xl mt-24 text-2xl md:text-4xl font-serif italic text-yellow-500/60 leading-relaxed font-light mx-auto border-x border-gold/10 px-16 opacity-80 uppercase tracking-widest">
+          We prioritize strategic institutional engagements with a <span className="text-yellow-500 font-bold">creative soul.</span> Let's weave your next visual legacy.
         </p>
 
         {/* Background Atmosphere */}
@@ -42,7 +42,7 @@ const Contact = () => {
             
             <div className="space-y-20">
                <div className="space-y-12">
-                  <h2 className="text-[11px] font-bold uppercase tracking-[0.8em] text-gold/60 group flex items-center gap-6">
+                  <h2 className="text-[11px] font-bold uppercase tracking-[0.8em] text-yellow-500/60 group flex items-center gap-6">
                      <span className="h-[1px] bg-gold/20 w-12" /> Digital Access Aura
                   </h2>
                   <div className="space-y-16 backdrop-blur-3xl p-16 glass-card rounded-[100px] border-gold/10 bg-charcoal/[0.01]">
@@ -52,8 +52,8 @@ const Contact = () => {
                               <Mail size={32} strokeWidth={1} />
                            </div>
                            <div className="space-y-4">
-                              <span className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-60 italic font-serif">The Open Channel</span>
-                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-gold transition-colors duration-700 leading-none">hello@dyness.pro</h4>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">The Open Channel</span>
+                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">hello@dyness.pro</h4>
                            </div>
                         </div>
                         <div className="flex items-center gap-12 group cursor-pointer interactive" data-cursor="INSIGHT">
@@ -61,8 +61,8 @@ const Contact = () => {
                               <Instagram size={32} strokeWidth={1} />
                            </div>
                            <div className="space-y-4">
-                              <span className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-60 italic font-serif">Visual Stream</span>
-                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-gold transition-colors duration-700 leading-none">@dyness_studio</h4>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">Visual Stream</span>
+                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">@dyness_studio</h4>
                            </div>
                         </div>
                         <div className="flex items-center gap-12 group cursor-pointer interactive" data-cursor="MARK">
@@ -70,8 +70,8 @@ const Contact = () => {
                               <MapPin size={32} strokeWidth={1} />
                            </div>
                            <div className="space-y-4">
-                              <span className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-60 italic font-serif">Regional Compass</span>
-                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-gold transition-colors duration-700 leading-none">TZ | KE | Regional</h4>
+                              <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">Regional Compass</span>
+                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">TZ | KE | Regional</h4>
                            </div>
                         </div>
                      </div>
@@ -79,8 +79,8 @@ const Contact = () => {
                </div>
                
                <div className="glass-card p-12 rounded-[60px] border-gold/10 border-dashed bg-transparent text-center">
-                  <h5 className="text-[10px] font-bold uppercase tracking-[1em] opacity-60 mb-8 font-serif italic">Availability: Q2 2026 Strategic Cycle</h5>
-                  <div className="flex items-center justify-center gap-8 text-xs font-bold uppercase tracking-[0.5em] text-gold animate-pulse">
+                  <h5 className="text-[10px] font-bold uppercase tracking-[1em]  mb-8 font-serif italic">Availability: Q2 2026 Strategic Cycle</h5>
+                  <div className="flex items-center justify-center gap-8 text-xs font-bold uppercase tracking-[0.5em] text-yellow-500 animate-pulse">
                      <Sparkles size={16} /> Accepting Proposals
                   </div>
                </div>
@@ -91,17 +91,17 @@ const Contact = () => {
                className="glass-card p-16 md:p-24 rounded-[120px] border-gold/5 space-y-24 bg-white/[0.01] relative overflow-hidden"
             >
                <div className="space-y-6">
-                  <h3 className="text-5xl md:text-7xl font-display uppercase italic leading-none text-charcoal">The <br /> <span className="text-charcoal font-serif not-italic text-outline uppercase tracking-tight">Vision.</span></h3>
-                  <p className="opacity-30 font-serif italic text-xl">Briefly articulate your artistic requirements...</p>
+                  <h3 className="text-5xl md:text-7xl font-display uppercase italic leading-none ">The <br /> <span className=" font-serif not-italic  uppercase tracking-tight">Vision.</span></h3>
+                  <p className=" font-serif italic text-xl">Briefly articulate your artistic requirements...</p>
                </div>
                <form className="space-y-20">
                   <div className="space-y-8">
-                     <label className="text-[10px] font-bold uppercase tracking-[1em] opacity-60 italic font-serif">Inquirer Soul</label>
-                      <input type="text" placeholder="Full Name / Organization" className="w-full bg-transparent border-b border-gold/20 py-8 outline-none focus:border-gold transition-all duration-700 text-3xl font-serif italic text-charcoal placeholder:opacity-20" />
+                     <label className="text-[10px] font-bold uppercase tracking-[1em]  italic font-serif">Inquirer Soul</label>
+                      <input type="text" placeholder="Full Name / Organization" className="w-full bg-transparent border-b border-gold/20 py-8 outline-none focus:border-gold transition-all duration-700 text-3xl font-serif italic  placeholder:" />
                   </div>
                   <div className="space-y-8">
-                     <label className="text-[10px] font-bold uppercase tracking-[1em] opacity-60 italic font-serif">Strategic Requirements</label>
-                      <textarea rows="4" placeholder="Briefly weave your requirements..." className="w-full bg-transparent border-b border-gold/20 py-8 outline-none focus:border-gold transition-all duration-700 text-3xl font-serif italic text-charcoal resize-none placeholder:opacity-20" />
+                     <label className="text-[10px] font-bold uppercase tracking-[1em]  italic font-serif">Strategic Requirements</label>
+                      <textarea rows="4" placeholder="Briefly weave your requirements..." className="w-full bg-transparent border-b border-gold/20 py-8 outline-none focus:border-gold transition-all duration-700 text-3xl font-serif italic  resize-none placeholder:" />
                   </div>
                    <button className="w-full bg-gold text-white py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-charcoal transition-all duration-700 shadow-[0_50px_100px_rgba(197,163,99,0.2)] flex items-center justify-between px-20 group interactive overflow-hidden relative" data-cursor="SEND">
                      <span className="relative z-10">Launch Strategic Proposal</span>
@@ -117,8 +117,8 @@ const Contact = () => {
       {/* 🌏 REGIONAL FOOTER PASSAGE */}
       <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-cream border-t border-charcoal/10 text-center">
          <div className="max-w-4xl mx-auto space-y-16">
-            <h5 className="text-[11px] font-bold uppercase tracking-[1.5em] text-gold/60 italic">East African Creative Force</h5>
-            <p className="text-2xl md:text-3xl font-serif italic text-charcoal/40 leading-relaxed font-light font-light uppercase tracking-widest">
+            <h5 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">East African Creative Force</h5>
+            <p className="text-2xl md:text-3xl font-serif italic /40 leading-relaxed font-light font-light uppercase tracking-widest">
                Serving NGOs, Institutional Leaders, and Innovative Brands across Tanzania, Kenya, and the wider regional block.
             </p>
          </div>
