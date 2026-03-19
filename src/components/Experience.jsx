@@ -95,7 +95,7 @@ const VisionCore = () => {
 
 const Experience = () => {
   return (
-    <div className="fixed inset-0 z-0 bg-cream">
+    <div className="fixed inset-0 z-0 bg-brown">
       <Canvas shadows camera={{ position: [0, 0, 10], fov: 35 }}>
         <PerspectiveCamera makeDefault position={[0, 0, 10]} />
         <ambientLight intensity={1.5} />
@@ -121,7 +121,7 @@ const Experience = () => {
         />
       </Canvas>
       {/* Atmospheric overlays */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(250,249,246,0.5)_100%)]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(26,18,11,0.5)_100%)]" />
       <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')]" />
     </div>
   )
