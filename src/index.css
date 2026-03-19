@@ -2,14 +2,14 @@
 
 @layer base {
   :root {
-    --bg-cream: #faf9f6;
-    --text-charcoal: #121212;
-    --accent-gold: #f4a717;
-    --accent-sage: #5f964d;
+    --bg-brown: #1a120b;
+    --text-cream: #faf9f6;
+    --accent-gold: #c5a363;
+    --accent-sage: #8e9a8a;
   }
 
   body {
-    @apply bg-cream text-charcoal font-sans antialiased selection:bg-gold/20 selection:text-charcoal;
+    @apply bg-brown text-cream font-sans antialiased selection:bg-gold/20 selection:text-cream;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
@@ -33,7 +33,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-cream;
+    @apply bg-brown;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -56,24 +56,24 @@
 
   /* Ultra-Premium Glassmorphism */
   .glass-card {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px) saturate(180%);
     border: 1px solid rgba(197, 163, 99, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
   }
 
   .glass-card:hover {
     border: 1px solid rgba(197, 163, 99, 0.4);
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.08);
   }
 
   /* Golden Mesh Gradients */
   .bg-gold-mesh {
-    background-color: #faf9f6;
+    background-color: var(--bg-brown);
     background-image:
-      radial-gradient(at 0% 0%, hsla(40, 50%, 80%, 0.3) 0, transparent 50%),
-      radial-gradient(at 50% 0%, hsla(45, 60%, 85%, 0.2) 0, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(35, 40%, 80%, 0.3) 0, transparent 50%);
+      radial-gradient(at 0% 0%, hsla(40, 50%, 15%, 0.3) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(45, 60%, 20%, 0.2) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(35, 40%, 15%, 0.3) 0, transparent 50%);
   }
 
   /* Editorial Hover Effects */
@@ -108,8 +108,8 @@
 
   --color-gold: #c5a363;
   --color-sage: #8e9a8a;
-  --color-charcoal: #121212;
   --color-cream: #faf9f6;
+  --color-brown: #1a120b;
 }
 
 /* UI Overlays */
