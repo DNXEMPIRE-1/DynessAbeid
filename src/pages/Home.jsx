@@ -23,7 +23,7 @@ const Home = () => {
   const bgOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.3]);
 
   return (
-    <div className="w-full bg-transparent  selection:bg-gold/20 selection:">
+    <div className="w-full bg-transparent selection:bg-gold/20 ">
       
       {/* 🌸 ARTISTIC ETHEREAL HERO */}
       <section className="relative h-screen flex flex-col justify-center pt-20 px-6 md:px-20 lg:px-32 z-50 overflow-hidden">
@@ -36,7 +36,7 @@ const Home = () => {
                className="flex items-center gap-6 mb-8 md:mb-12"
             >
                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-[1em] text-yellow-500 animate-pulse italic">
-                  Digital Artisan & Creative Visionary
+                  Visual Designer & Consultant
                </span>
                <div className="h-px bg-gold/20 flex-grow" />
             </motion.div>
@@ -46,25 +46,25 @@ const Home = () => {
                   {...reveal}
                   className="text-[12vw] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter mix-blend-exclusion"
                >
-                  Artistic <br /> 
+                  Strategic <br /> 
                   <span className="text-yellow-500 font-serif italic not-uppercase tracking-tight lowercase opacity-90 drop-shadow-2xl">
-                     Alchemy.
+                     Design.
                   </span>
                </motion.h1>
                <motion.p 
                   {...fadeUp}
                   className="mt-8 md:mt-12 max-w-2xl text-lg md:text-2xl font-serif italic  font-light leading-relaxed tracking-tight opacity-80"
                >
-                  Crafting strategic institutional narratives with a <span className="text-yellow-500 font-bold">bespoke artistic touch.</span>
+                  Creating strategic visual designs for organizations with a <span className="text-yellow-500 font-bold">personal touch.</span>
                </motion.p>
             </motion.div>
 
             <motion.div {...fadeUp} className="mt-12 md:mt-16 flex flex-wrap gap-8 md:gap-12 items-center">
-               <Link to="/projects" className="group relative overflow-hidden bg-gold text-white px-12 md:px-16 py-6 md:py-8 rounded-full font-display uppercase tracking-widest text-[10px] md:text-[12px] hover:bg-charcoal transition-all duration-700 shadow-[0_0_80px_rgba(197,163,99,0.2)] interactive" data-cursor="VIEW">
-                  Explore Gallery
+               <Link to="/projects" className="group relative overflow-hidden bg-gold text-white px-12 md:px-16 py-6 md:py-8 rounded-full font-display uppercase tracking-widest text-[10px] md:text-[12px] hover:bg-brown/40 transition-all duration-700 shadow-[0_0_80px_rgba(197,163,99,0.2)] interactive" data-cursor="VIEW">
+                  View Portfolio
                </Link>
                <Link to="/contact" className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.5em] border-b border-gold/30 pb-2 hover:text-yellow-500 transition-colors duration-500 interactive" data-cursor="START">
-                  Initiate Discussion
+                  Start a Project
                </Link>
             </motion.div>
          </motion.div>
@@ -84,15 +84,15 @@ const Home = () => {
       </section>
 
       {/* 🎨 THE SIGNATURE APPROACH - Artistic & Structured */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative bg-white/40 backdrop-blur-md">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative bg-brown/40 backdrop-blur-md">
          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-32 items-center">
             <motion.div {...reveal} className="lg:w-1/2 relative">
                <div className="aspect-[4/6] rounded-[100px] overflow-hidden border border-gold/10 glass-card relative group">
                   <img src="/projects/IMG-20260225-WA0055.jpg" alt="Artist at work" className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-all duration-1000 opacity-80 group-hover:opacity-100" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-cream via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brown via-transparent to-transparent" />
                   <div className="absolute bottom-16 left-16">
-                     <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-yellow-500/80 italic block mb-4">The Methodology</span>
-                     <h3 className="text-4xl font-display uppercase italic ">Crafted <br /> Precision.</h3>
+                     <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-yellow-500/80 italic block mb-4">Our Process</span>
+                     <h3 className="text-4xl font-display uppercase italic ">Attentive <br /> Design.</h3>
                   </div>
                </div>
                {/* Floating Sparkle */}
@@ -107,14 +107,14 @@ const Home = () => {
 
             <div className="lg:w-1/2 space-y-16">
               <div className="space-y-8">
-                <h2 className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/60 italic">Global Identity</h2>
-                <h3 className="text-6xl md:text-8xl font-display leading-[0.8] tracking-tighter uppercase italic ">Strategic <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Artistry.</span></h3>
+                <h2 className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/60 italic">Our Service</h2>
+                <h3 className="text-6xl md:text-8xl font-display leading-[0.8] tracking-tighter uppercase italic ">Strategic <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Design.</span></h3>
               </div>
               <div className="space-y-12 max-w-xl">
                 <p className="text-2xl font-serif italic /80 leading-relaxed font-light">
-                  "I don't just design reports; I weave institutional impact into <span className="text-yellow-500 font-bold">visual poetry</span> that speaks directly to global donors."
+                  "I design reports and visuals that help organizations share their <span className="text-yellow-500 font-bold">impact</span> with the world."
                 </p>
-                <div className="grid grid-cols-2 gap-12 pt-12 border-t border-charcoal/10">
+                <div className="grid grid-cols-2 gap-12 pt-12 border-t border-cream/10">
                    <div className="space-y-4">
                       <Wand2 className="text-yellow-500/60" size={24} strokeWidth={1} />
                        <h4 className="text-[11px] font-bold uppercase tracking-widest italic ">Artistic Polish</h4>
@@ -132,11 +132,11 @@ const Home = () => {
       </section>
 
       {/* 💎 SHOWCASE - Fluid & Immersive */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-cream/50">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-brown/50">
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="flex flex-col md:flex-row justify-between items-end gap-12">
-               <h3 className="text-5xl md:text-8xl font-display uppercase tracking-tight italic ">Curated <br /> <span className="text-yellow-500 font-serif not-italic ">Exhibition.</span></h3>
-               <p className="text-lg font-serif italic  max-w-sm border-l border-gold/40 pl-10 ">Selected highlights from our boutique design studio servicing East Africa.</p>
+               <h3 className="text-5xl md:text-8xl font-display uppercase tracking-tight italic ">Selected <br /> <span className="text-yellow-500 font-serif not-italic ">Work.</span></h3>
+               <p className="text-lg font-serif italic  max-w-sm border-l border-gold/40 pl-10 ">Selected highlights from our design studio based in East Africa.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -158,13 +158,13 @@ const Home = () => {
                        ) : (
                           <img src={project.img} alt={project.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
                        )}
-                       <div className="absolute inset-0 bg-gradient-to-t from-cream/90 via-transparent to-transparent flex flex-col justify-end p-16">
+                       <div className="absolute inset-0 bg-gradient-to-t from-brown/90 via-transparent to-transparent flex flex-col justify-end p-16">
                           <Link to="/projects" className="size-20 bg-gold/90 rounded-full flex items-center justify-center text-black -rotate-45 group-hover:rotate-0 transition-transform shadow-2xl self-end interactive">
                              <Plus size={32} />
                           </Link>
                        </div>
                     </div>
-                    <div className="flex justify-between items-start pt-8 border-t border-cream/10">
+                    <div className="flex justify-between items-start pt-8 border-t border-brown/10">
                        <div className="space-y-2">
                            <h4 className="text-3xl font-serif italic /90 group-hover:text-yellow-500 transition-colors">{project.title}</h4>
                            <span className="text-[10px] font-bold uppercase tracking-[0.4em]  italic font-serif ">{project.type}</span>
@@ -177,12 +177,12 @@ const Home = () => {
       </section>
 
       {/* 🚀 THE INVITATION - Artistic CTA */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-cream">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-5xl mx-auto glass-card p-24 md:p-40 rounded-[120px] space-y-16 border-gold/10 relative overflow-hidden">
-            <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/80 animate-pulse italic">Phase Engagement Initiation</span>
-            <h4 className="text-6xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Let's Create <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Magic.</span></h4>
+            <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/80 animate-pulse italic">Work With Us</span>
+            <h4 className="text-6xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Let's Work <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Together.</span></h4>
             <p className="text-2xl font-serif italic /80 max-w-2xl mx-auto leading-relaxed border-x border-gold/20 px-12">
-               Elevate your institution's communication through an artistic lens.
+               Help your organization communicate clearly through design.
             </p>
             <div className="pt-16">
                <Link to="/contact" className="group relative inline-flex items-center justify-center p-12 bg-gold rounded-full text-black hover:scale-110 transition-transform duration-700 shadow-[0_0_100px_rgba(197,163,99,0.3)]">
