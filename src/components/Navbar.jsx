@@ -28,9 +28,9 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Strategy', path: '/about' },
-    { name: 'Verticals', path: '/services' },
+    { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/projects' },
-    { name: 'Engage', path: '/contact' }
+    { name: 'Contact', path: '/contact' }
   ];
 
   const navVariants = {
@@ -45,7 +45,7 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-0 left-0 w-full px-6 py-0 md:px-12 md:py-0 z-[1000] flex justify-between items-center pointer-events-none"
     >
-      <div className={`absolute inset-x-0 top-0 bg-cream/90 backdrop-blur-[12px] border-b border-charcoal/5 pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-16 md:h-20`} />
+      <div className={`absolute inset-x-0 top-0 bg-brown/90 backdrop-blur-[12px] border-b border-cream/5 pointer-events-none transition-opacity duration-1000 ${scrollY.get() > 50 ? 'opacity-100' : 'opacity-0'} h-16 md:h-20`} />
       
       <Link to="/" className="font-serif italic font-black text-2xl md:text-4xl  pointer-events-auto interactive group tracking-tighter relative z-10 py-4" data-cursor="DK.HOME">
          Dyness <span className="text-yellow-500">K.</span>
@@ -78,17 +78,17 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
-            className="fixed inset-0 bg-cream  z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
+            className="fixed inset-0 bg-brown  z-[1100] p-8 md:p-24 flex flex-col justify-between items-start pointer-events-auto"
           >
             <div className="w-full flex justify-between items-start">
-               <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/30 italic">Artisan Navigation Flow</span>
+               <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/30 italic">Navigation</span>
                <button className="interactive group" onClick={() => setIsOpen(false)} data-cursor="CLOSE">
                   <X size={40} strokeWidth={1} className="group-hover:rotate-90 group-hover:text-yellow-500 transition-all duration-700" />
                </button>
             </div>
 
             <div className="flex flex-col gap-6 md:gap-10">
-              {[{name: 'Atmosphere', path: '/'}, ...menuItems].map((item, i) => (
+              {[{name: 'Home', path: '/'}, ...menuItems].map((item, i) => (
                 <motion.div
                   key={item.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -108,13 +108,13 @@ const Navbar = () => {
               ))}
             </div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-charcoal/5">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-cream/5">
                 <div className="space-y-4">
-                   <p className="text-[9px] font-bold uppercase tracking-widest ">Direct Engagement</p>
+                   <p className="text-[9px] font-bold uppercase tracking-widest ">Contact</p>
                    <a href="mailto:hello@dyness.pro" className="text-xl font-serif italic text-yellow-500/60 hover:text-yellow-500 transition-colors">hello@dyness.pro</a>
                 </div>
                 <div className="space-y-4">
-                   <p className="text-[9px] font-bold uppercase tracking-widest ">Creative Base</p>
+                   <p className="text-[9px] font-bold uppercase tracking-widest ">Based in</p>
                    <p className="text-xl font-serif italic /40">Tanzania | Regional East Africa</p>
                 </div>
                 <div className="flex flex-wrap gap-8 text-[9px] font-bold tracking-[0.4em] uppercase  items-end justify-end">
