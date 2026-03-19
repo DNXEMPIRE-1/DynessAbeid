@@ -36,7 +36,7 @@ const ProjectDetail = () => {
                transition={{ duration: 1.5, ease: [0.19, 1, 0.22, 1] }}
                className="space-y-12"
             >
-               <span className="text-[10px] font-bold uppercase tracking-[1.5em] text-yellow-500 animate-pulse italic block">Exhibition Narrative</span>
+               <span className="text-[10px] font-bold uppercase tracking-[1.5em] text-yellow-500 animate-pulse italic block">Project Story</span>
                <h1 className="text-7xl md:text-[12vw] font-display uppercase tracking-[-0.05em] leading-[0.75] mb-12 mix-blend-exclusion select-none italic">{project.title}</h1>
                <div className="flex flex-wrap gap-12 items-center text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">
                   <span className="flex items-center gap-6 text-yellow-500/80 opacity-100 italic"><Info size={16} strokeWidth={1} /> {project.client}</span>
@@ -48,16 +48,16 @@ const ProjectDetail = () => {
             </motion.div>
          </div>
          {/* Decorative Watermark */}
-         <div className="absolute top-1/2 right-12 text-[15vw] font-serif font-black italic select-none opacity-[0.02] rotate-90 origin-bottom-right">Analysis.</div>
+         <div className="absolute top-1/2 right-12 text-[15vw] font-serif font-black italic select-none opacity-[0.02] rotate-90 origin-bottom-right">Strategy.</div>
       </section>
 
       {/* 🔮 STRATEGIC CURATION */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative z-10 bg-white/60 backdrop-blur-xl">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative z-10 bg-brown/60 backdrop-blur-xl">
          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-32 items-start">
             <div className="space-y-20">
                <div className="space-y-10">
                   <h2 className="text-[11px] font-bold uppercase tracking-[0.8em] text-yellow-500/60 group flex items-center gap-8">
-                     <span className="h-[1px] bg-gold/40 w-16" /> The Challenge Flow
+                     <span className="h-[1px] bg-gold/40 w-16" /> The Challenge
                   </h2>
                   <p className="text-3xl md:text-5xl font-serif italic /90 font-light leading-snug tracking-tight border-l border-gold/20 pl-16">
                      {project.challenge}
@@ -65,7 +65,7 @@ const ProjectDetail = () => {
                </div>
                <div className="w-full h-px bg-charcoal/10 shadow-2xl" />
                <div className="space-y-12 group cursor-pointer interactive" data-cursor="ROLE">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.6em]  italic font-serif">Creative Direction Vertical</span>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.6em]  italic font-serif">Project Role</span>
                   <h4 className="text-4xl md:text-7xl font-display uppercase italic  group-hover:text-yellow-500 transition-colors duration-700 leading-none">{project.role}</h4>
                </div>
             </div>
@@ -78,7 +78,7 @@ const ProjectDetail = () => {
             >
                <div className="space-y-10">
                   <h2 className="text-[11px] font-bold uppercase tracking-[1em] text-yellow-500 animate-pulse flex items-center gap-6 italic">
-                     <Sparkles size={16} strokeWidth={1} /> Strategic Alchemy
+                     <Sparkles size={16} strokeWidth={1} /> Strategic Solution
                   </h2>
                   <p className="text-xl md:text-3xl leading-relaxed /70 italic font-serif font-light border-l border-gold/20 pl-16">
                      {project.solution}
@@ -87,8 +87,8 @@ const ProjectDetail = () => {
                
                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pt-24 border-t border-charcoal/10">
                   {[
-                    { title: "High Fidelity", desc: "Premium design outputs for stakeholder reviews.", icon: <ArrowUpRight /> },
-                    { title: "Bespoke Logic", desc: "Translating metrics into poetic narratives.", icon: <Plus /> }
+                    { title: "Quality Design", desc: "Premium design outputs for stakeholder reviews.", icon: <ArrowUpRight /> },
+                    { title: "Custom Strategy", desc: "Translating metrics into poetic narratives.", icon: <Plus /> }
                   ].map((item, i) => (
                     <div key={i} className="space-y-8 group cursor-pointer interactive">
                        <div className="size-16 rounded-full border border-gold/10 flex items-center justify-center text-yellow-500/20 group-hover:bg-gold group-hover:text-black transition-all duration-700">
@@ -106,10 +106,10 @@ const ProjectDetail = () => {
       </section>
 
       {/* 🚀 CASE EXHIBITION GALLERY */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-cream border-y border-charcoal/10">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-brown border-y border-cream/10">
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="text-center space-y-8">
-               <h2 className="text-[10px] font-bold uppercase tracking-[2em] text-yellow-500/60 italic">Aesthetic Evidence</h2>
+               <h2 className="text-[10px] font-bold uppercase tracking-[2em] text-yellow-500/60 italic">Project Gallery</h2>
                <h3 className="text-4xl md:text-[8vw] font-display italic mix-blend-exclusion">Visual <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Highlights.</span></h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -124,12 +124,12 @@ const ProjectDetail = () => {
       </section>
 
       {/* 💎 SIGNATURE PROJECT CTA */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-cream">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-5xl mx-auto glass-card p-24 md:p-40 rounded-[150px] space-y-20 border-gold/5 bg-gradient-to-br from-white/[0.01] to-transparent relative isolate overflow-hidden">
             <h4 className="text-6xl md:text-[10vw] font-display uppercase tracking-tighter leading-[0.8] italic mix-blend-exclusion">Start your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Project.</span></h4>
             <div className="pt-24">
-               <Link to="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] shadow-[0_50px_100px_rgba(197,163,99,0.2)] hover:bg-charcoal transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit">
-                  Initiate Discussion <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
+               <Link to="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] shadow-[0_50px_100px_rgba(197,163,99,0.2)] hover:bg-brown/40 transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit">
+                  Start a Project <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
                </Link>
             </div>
             {/* Atmosphere Mark */}
