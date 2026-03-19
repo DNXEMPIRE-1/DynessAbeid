@@ -26,13 +26,13 @@ const About = () => {
            className="relative max-w-6xl pt-20"
         >
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
-             <Plus size={12} className="" /> The Creative Architect <Plus size={12} className="" />
+             <Plus size={12} className="" /> About Dyness <Plus size={12} className="" />
           </span>
           <h1 className="text-[12vw] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
-             Artistic <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Essence.</span>
+             Our <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Core.</span>
           </h1>
           <p className="max-w-4xl mt-12 text-2xl md:text-4xl font-serif italic /60 leading-relaxed font-light mx-auto border-x border-gold/20 px-12 uppercase tracking-wide">
-             Bridging the gap between <span className="text-yellow-500 font-bold">institutional logic</span> and <span className="text-yellow-500 font-bold">visual poetry.</span>
+             We combine <span className="text-yellow-500 font-bold">strategic thinking</span> with <span className="text-yellow-500 font-bold">creative design.</span>
           </p>
         </motion.div>
         
@@ -43,22 +43,22 @@ const About = () => {
       </section>
 
       {/* 🔮 ETHEREAL PHILOSOPHY */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative z-10 bg-white/40 backdrop-blur-sm">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative z-10 bg-brown/40 backdrop-blur-sm">
          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
             <motion.div {...fadeUp} className="space-y-16">
                <h2 className="text-[11px] font-bold uppercase tracking-[0.6em] text-yellow-500/60 group flex items-center gap-6">
-                  <span className="h-[1px] bg-gold/40 w-16" /> The Philosophy Flow
+                  <span className="h-[1px] bg-gold/40 w-16" /> Our Philosophy
                </h2>
                <div className="space-y-12">
                   <div className="space-y-6 group cursor-pointer interactive" data-cursor="ART">
-                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Strategic <br /> <span className="">Curation.</span></h3>
+                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Strategic <br /> <span className="">Design.</span></h3>
                      <p className="text-xl md:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
                         Every creative decision is an investment in clarity. We weave complex data into seamless visual narratives that command attention.
                      </p>
                   </div>
                   <div className="w-full h-px bg-charcoal/10 shadow-2xl" />
                   <div className="space-y-6 group cursor-pointer interactive" data-cursor="SOUL">
-                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Artistic <br /> <span className="">Integrity.</span></h3>
+                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Design <br /> <span className="">Integrity.</span></h3>
                      <p className="text-xl md:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
                         The NGO sector demands trust. I provide a visual language of prestige and professionalism, infused with a unique creative soul.
                      </p>
@@ -77,7 +77,7 @@ const About = () => {
                   "I specialize in the alchemy of information—transforming rigid data into fluid, beautiful, and donor-ready documents."
                </p>
                <div className="pt-20 flex flex-wrap gap-6">
-                  {['Artistic Polish', 'Strategic Soul', 'Bespoke Logic', 'East African Vision'].map((tag, i) => (
+                  {['Artistic Polish', 'Design Logic', 'Custom Strategy', 'East African Vision'].map((tag, i) => (
                      <span key={i} className="text-[10px] font-bold uppercase tracking-[0.3em] px-8 py-4 border border-charcoal/10 rounded-full hover:opacity-100 hover:border-gold hover:text-yellow-500 transition-all duration-700 cursor-default">{tag}</span>
                   ))}
                </div>
@@ -86,18 +86,18 @@ const About = () => {
       </section>
 
       {/* 🌏 REGIONAL FOOTPRINT - Artistic Perspective */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative overflow-hidden bg-cream/50">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 relative overflow-hidden bg-brown/50">
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="text-center space-y-8">
                <span className="text-[10px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 animate-pulse italic block">Author Perspective</span>
-               <h3 className="text-5xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Regional <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Mastery.</span></h3>
+               <h3 className="text-5xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Regional <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Expertise.</span></h3>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
                {[
-                  { label: "Vision", val: "Institutional Soul", desc: "A bespoke visual language built for deep trust." },
+                  { label: "Vision", val: "Authentic Design", desc: "A visual language built for trust and clarity." },
                   { label: "Borders", val: "TZ | KE | EA", desc: "Crafting narratives that resonate across East Africa." },
-                  { label: "Aura", val: "Donor-Ready", desc: "Ethereal presentation backed by ironclad logic." }
+                  { label: "Quality", val: "Professional", desc: "Clear presentation backed by strategic logic." }
                ].map((item, i) => (
                   <motion.div 
                      key={i}
@@ -119,13 +119,13 @@ const About = () => {
       </section>
 
       {/* 💎 SIGNATURE CTA - Engage the Artist */}
-      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-cream">
+      <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-4xl mx-auto space-y-20 py-20 relative isolate">
-             <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Regional Aesthetic Footprint</h4>
-            <h4 className="text-6xl md:text-[11vw] font-display italic leading-none tracking-tighter mix-blend-exclusion">Let's Weave your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Poetry.</span></h4>
+             <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Our Work</h4>
+            <h4 className="text-6xl md:text-[11vw] font-display italic leading-none tracking-tighter mix-blend-exclusion">Let's Build your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Project.</span></h4>
             <div className="pt-16">
-               <a href="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-charcoal transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit shadow-[0_0_100px_rgba(197,163,99,0.2)]">
-                  Initiate Discussion <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
+               <a href="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-brown/40 transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit shadow-[0_0_100px_rgba(197,163,99,0.2)]">
+                  Start a Project <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
                </a>
             </div>
             {/* Background Texture Overlay */}
