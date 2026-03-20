@@ -37,7 +37,7 @@ const ProjectDetail = () => {
                className="space-y-12"
             >
                <span className="text-[10px] font-bold uppercase tracking-[1.5em] text-yellow-500 animate-pulse italic block">Project Story</span>
-               <h1 className="text-7xl md:text-[12vw] font-display uppercase tracking-[-0.05em] leading-[0.75] mb-12 mix-blend-exclusion select-none italic">{project.title}</h1>
+               <h1 className="text-5xl md:text-8xl lg:text-[12vw] font-display uppercase tracking-[-0.05em] leading-[0.75] mb-12 mix-blend-exclusion select-none italic">{project.title}</h1>
                <div className="flex flex-wrap gap-12 items-center text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">
                   <span className="flex items-center gap-6 text-yellow-500/80 opacity-100 italic"><Info size={16} strokeWidth={1} /> {project.client}</span>
                   <div className="h-px w-16 bg-gold/10" />
@@ -59,7 +59,7 @@ const ProjectDetail = () => {
                   <h2 className="text-[11px] font-bold uppercase tracking-[0.8em] text-yellow-500/60 group flex items-center gap-8">
                      <span className="h-[1px] bg-gold/40 w-16" /> The Challenge
                   </h2>
-                  <p className="text-3xl md:text-5xl font-serif italic /90 font-light leading-snug tracking-tight border-l border-gold/20 pl-16">
+                  <p className="text-xl md:text-3xl lg:text-5xl font-serif italic /90 font-light leading-snug tracking-tight border-l border-gold/20 pl-8 md:pl-16">
                      {project.challenge}
                   </p>
                </div>
@@ -110,7 +110,7 @@ const ProjectDetail = () => {
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="text-center space-y-8">
                <h2 className="text-[10px] font-bold uppercase tracking-[2em] text-yellow-500/60 italic">Project Gallery</h2>
-               <h3 className="text-4xl md:text-[8vw] font-display italic mix-blend-exclusion">Visual <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Highlights.</span></h3>
+               <h3 className="text-4xl md:text-7xl lg:text-[8vw] font-display italic mix-blend-exclusion">Visual <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Highlights.</span></h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                <motion.div whileHover={{ y: -20 }} className="aspect-[4/3] rounded-[80px] overflow-hidden border border-gold/5 glass-card flex items-center justify-center group">
@@ -126,7 +126,7 @@ const ProjectDetail = () => {
       {/* 💎 SIGNATURE PROJECT CTA */}
       <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-5xl mx-auto glass-card p-24 md:p-40 rounded-[150px] space-y-20 border-gold/5 bg-gradient-to-br from-white/[0.01] to-transparent relative isolate overflow-hidden">
-            <h4 className="text-6xl md:text-[10vw] font-display uppercase tracking-tighter leading-[0.8] italic mix-blend-exclusion">Start your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Project.</span></h4>
+            <h4 className="text-5xl md:text-8xl lg:text-[10vw] font-display uppercase tracking-tighter leading-[0.8] italic mix-blend-exclusion">Start your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Project.</span></h4>
             <div className="pt-24">
                <Link to="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] shadow-[0_50px_100px_rgba(197,163,99,0.2)] hover:bg-brown/40 transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit">
                   Start a Project <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
