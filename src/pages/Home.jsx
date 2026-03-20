@@ -44,10 +44,10 @@ const Home = () => {
             <motion.div style={{ y: titleY }} className="relative">
                <motion.h1 
                   {...reveal}
-                  className="text-[12vw] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter mix-blend-exclusion"
+                  className="text-[clamp(3rem,15vw,6rem)] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter mix-blend-exclusion"
                >
                   Strategic <br /> 
-                  <span className="text-yellow-500 font-serif italic not-uppercase tracking-tight lowercase opacity-90 drop-shadow-2xl">
+                  <span className="text-yellow-500 font-serif italic not-uppercase tracking-tight lowercase opacity-90 drop-shadow-2xl text-[0.8em]">
                      Design.
                   </span>
                </motion.h1>
@@ -107,8 +107,8 @@ const Home = () => {
 
             <div className="lg:w-1/2 space-y-16">
               <div className="space-y-8">
-                <h2 className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/60 italic">Our Service</h2>
-                <h3 className="text-6xl md:text-8xl font-display leading-[0.8] tracking-tighter uppercase italic ">Strategic <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Design.</span></h3>
+                <h2 className="text-[10px] font-bold uppercase tracking-[0.6em] text-yellow-500/60 italic">Our Service</h2>
+                <h3 className="text-[12vw] md:text-8xl font-display leading-[0.8] tracking-tighter uppercase italic ">Strategic <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Design.</span></h3>
               </div>
               <div className="space-y-12 max-w-xl">
                 <p className="text-2xl font-serif italic /80 leading-relaxed font-light">
@@ -135,7 +135,7 @@ const Home = () => {
       <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-brown/50">
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="flex flex-col md:flex-row justify-between items-end gap-12">
-               <h3 className="text-5xl md:text-8xl font-display uppercase tracking-tight italic ">Selected <br /> <span className="text-yellow-500 font-serif not-italic ">Work.</span></h3>
+               <h3 className="text-5xl md:text-7xl lg:text-8xl font-display uppercase tracking-tight italic ">Selected <br /> <span className="text-yellow-500 font-serif not-italic ">Work.</span></h3>
                <p className="text-lg font-serif italic  max-w-sm border-l border-gold/40 pl-10 ">Selected highlights from our design studio based in East Africa.</p>
             </div>
 
@@ -180,8 +180,8 @@ const Home = () => {
       <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-5xl mx-auto glass-card p-24 md:p-40 rounded-[120px] space-y-16 border-gold/10 relative overflow-hidden">
             <span className="text-[10px] font-bold uppercase tracking-[1em] text-yellow-500/80 animate-pulse italic">Work With Us</span>
-            <h4 className="text-6xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Let's Work <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Together.</span></h4>
-            <p className="text-2xl font-serif italic /80 max-w-2xl mx-auto leading-relaxed border-x border-gold/20 px-12">
+            <h4 className="text-5xl md:text-[8vw] lg:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Let's Work <br /> <span className="text-yellow-500 font-serif not-italic uppercase">Together.</span></h4>
+            <p className="text-xl md:text-2xl font-serif italic /80 max-w-2xl mx-auto leading-relaxed border-x border-gold/20 px-6 md:px-12">
                Help your organization communicate clearly through design.
             </p>
             <div className="pt-16">
