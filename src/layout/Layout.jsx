@@ -10,11 +10,18 @@ const CustomCursor = () => {
     const [cursorContent, setCursorContent] = useState('');
     const [click, setClick] = useState(false);
   
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
+  
     const springConfig = { damping: 35, stiffness: 250 };
     const cursorX = useSpring(mouseX, springConfig);
     const cursorY = useSpring(mouseY, springConfig);
   
     useEffect(() => {
+      const checkTouch = () => {
+        setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+      };
+      checkTouch();
+
       const handleMouseMove = (e) => {
         mouseX.set(e.clientX);
         mouseY.set(e.clientY);
@@ -42,6 +49,8 @@ const CustomCursor = () => {
       };
     }, [mouseX, mouseY]);
   
+    if (isTouchDevice) return null;
+
     return (
       <>
         {/* Artistic Core */}
