@@ -23,12 +23,12 @@ const Contact = () => {
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
              <Plus size={12} className="" /> Contact Us <Plus size={12} className="" />
           </span>
-          <h1 className="text-[14vw] md:text-[11vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
+          <h1 className="text-[clamp(3.5rem,15vw,6rem)] md:text-[11vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
              Get in <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Touch.</span>
           </h1>
         </motion.div>
         
-        <p className="max-w-4xl mt-24 text-2xl md:text-4xl font-serif italic text-yellow-500/60 leading-relaxed font-light mx-auto border-x border-gold/10 px-16 opacity-80 uppercase tracking-widest">
+        <p className="max-w-4xl mt-24 text-xl md:text-3xl lg:text-4xl font-serif italic text-yellow-500/60 leading-relaxed font-light mx-auto border-x border-gold/10 px-6 md:px-16 opacity-80 uppercase tracking-widest">
           We prioritize strategic institutional engagements with a <span className="text-yellow-500 font-bold">creative soul.</span> Let's weave your next visual legacy.
         </p>
 
@@ -53,7 +53,7 @@ const Contact = () => {
                            </div>
                            <div className="space-y-4">
                               <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">Email</span>
-                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">hello@dyness.pro</h4>
+                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">heydyness@gmail.com</h4>
                            </div>
                         </div>
                         <div className="flex items-center gap-12 group cursor-pointer interactive" data-cursor="INSIGHT">
@@ -71,7 +71,17 @@ const Contact = () => {
                            </div>
                            <div className="space-y-4">
                               <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">Location</span>
-                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">TZ | KE | Regional</h4>
+                              <h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">Nairobi, Kenya</h4>
+                           </div>
+                        </div>
+
+                        <div className="flex items-center gap-12 group cursor-pointer interactive" data-cursor="PHONE">
+                           <div className="size-24 rounded-full border border-gold/10 flex items-center justify-center group-hover:bg-gold group-hover:text-black group-hover:scale-110 transition-all duration-700">
+                              <Plus size={32} strokeWidth={1} />
+                           </div>
+                           <div className="space-y-4">
+                              <span className="text-[10px] font-bold uppercase tracking-[0.5em]  italic font-serif">WhatsApp & Calls</span>
+                              <a href="tel:+254792751109"><h4 className="text-3xl md:text-4xl font-display uppercase hover:text-yellow-500 transition-colors duration-700 leading-none">+254 792 751 109</h4></a>
                            </div>
                         </div>
                      </div>
@@ -91,8 +101,8 @@ const Contact = () => {
                className="glass-card p-16 md:p-24 rounded-[120px] border-gold/5 space-y-24 bg-white/[0.01] relative overflow-hidden"
             >
                <div className="space-y-6">
-                  <h3 className="text-5xl md:text-7xl font-display uppercase italic leading-none ">The <br /> <span className=" font-serif not-italic  uppercase tracking-tight">Vision.</span></h3>
-                  <p className=" font-serif italic text-xl">Tell us about your project...</p>
+                  <h3 className="text-4xl md:text-6xl lg:text-7xl font-display uppercase italic leading-none ">The <br /> <span className=" font-serif not-italic  uppercase tracking-tight">Vision.</span></h3>
+                  <p className=" font-serif italic text-lg md:text-xl">Tell us about your project...</p>
                </div>
                <form className="space-y-20">
                   <div className="space-y-8">
@@ -117,9 +127,9 @@ const Contact = () => {
       {/* 🌏 REGIONAL FOOTER PASSAGE */}
       <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-brown border-t border-cream/10 text-center">
          <div className="max-w-4xl mx-auto space-y-16">
-            <h5 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Based in East Africa</h5>
+            <h5 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Based in Nairobi, Kenya</h5>
             <p className="text-2xl md:text-3xl font-serif italic /40 leading-relaxed font-light font-light uppercase tracking-widest">
-               Serving NGOs, Institutional Leaders, and Innovative Brands across Tanzania, Kenya, and the wider regional block.
+               Serving NGOs, Institutional Leaders, and Innovative Brands across Kenya and the wider East African regional block.
             </p>
          </div>
       </section>
