@@ -98,7 +98,7 @@ const Navbar = () => {
                   <Link 
                     to={item.path} 
                     onClick={() => setIsOpen(false)}
-                    className="text-6xl md:text-[8vw] font-serif italic /90 hover:text-yellow-500 transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
+                    className="text-4xl md:text-6xl lg:text-[8vw] font-serif italic /90 hover:text-yellow-500 transition-all duration-700 interactive flex items-center gap-8 group leading-[0.85] tracking-tight"
                   >
                     <span className="text-[1.5vw] font-display text-yellow-500/5 group-hover:text-yellow-500/20 transition-colors uppercase not-italic">Art.{i+1}</span>
                     {item.name}
@@ -111,11 +111,11 @@ const Navbar = () => {
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-cream/5">
                 <div className="space-y-4">
                    <p className="text-[9px] font-bold uppercase tracking-widest ">Contact</p>
-                   <a href="mailto:hello@dyness.pro" className="text-xl font-serif italic text-yellow-500/60 hover:text-yellow-500 transition-colors">hello@dyness.pro</a>
+                   <a href="mailto:heydyness@gmail.com" className="text-xl font-serif italic text-yellow-500/60 hover:text-yellow-500 transition-colors">heydyness@gmail.com</a>
                 </div>
                 <div className="space-y-4">
                    <p className="text-[9px] font-bold uppercase tracking-widest ">Based in</p>
-                   <p className="text-xl font-serif italic /40">Tanzania | Regional East Africa</p>
+                   <p className="text-xl font-serif italic /40">Nairobi, Kenya</p>
                 </div>
                 <div className="flex flex-wrap gap-8 text-[9px] font-bold tracking-[0.4em] uppercase  items-end justify-end">
                    <a href="#" className="hover:text-yellow-500 transition-colors">Instagram</a>
