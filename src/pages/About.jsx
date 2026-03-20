@@ -28,7 +28,7 @@ const About = () => {
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
              <Plus size={12} className="" /> About Dyness <Plus size={12} className="" />
           </span>
-          <h1 className="text-[12vw] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
+          <h1 className="text-[clamp(3.5rem,15vw,6rem)] md:text-[9vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
              Our <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Core.</span>
           </h1>
           <p className="max-w-4xl mt-12 text-2xl md:text-4xl font-serif italic /60 leading-relaxed font-light mx-auto border-x border-gold/20 px-12 uppercase tracking-wide">
@@ -51,15 +51,15 @@ const About = () => {
                </h2>
                <div className="space-y-12">
                   <div className="space-y-6 group cursor-pointer interactive" data-cursor="ART">
-                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Strategic <br /> <span className="">Design.</span></h3>
-                     <p className="text-xl md:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
+                     <h3 className="text-4xl md:text-5xl lg:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Strategic <br /> <span className="">Design.</span></h3>
+                     <p className="text-lg md:text-xl lg:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
                         Every creative decision is an investment in clarity. We weave complex data into seamless visual narratives that command attention.
                      </p>
                   </div>
                   <div className="w-full h-px bg-charcoal/10 shadow-2xl" />
                   <div className="space-y-6 group cursor-pointer interactive" data-cursor="SOUL">
-                     <h3 className="text-5xl md:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Design <br /> <span className="">Integrity.</span></h3>
-                     <p className="text-xl md:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
+                     <h3 className="text-4xl md:text-5xl lg:text-7xl font-display uppercase leading-none italic group-hover:text-yellow-500 transition-colors duration-700">Design <br /> <span className="">Integrity.</span></h3>
+                     <p className="text-lg md:text-xl lg:text-2xl leading-relaxed  font-serif italic max-w-lg group-hover:opacity-80 transition-opacity duration-700">
                         The NGO sector demands trust. I provide a visual language of prestige and professionalism, infused with a unique creative soul.
                      </p>
                   </div>
@@ -90,7 +90,7 @@ const About = () => {
          <div className="max-w-7xl mx-auto space-y-20">
             <div className="text-center space-y-8">
                <span className="text-[10px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 animate-pulse italic block">Author Perspective</span>
-               <h3 className="text-5xl md:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Regional <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Expertise.</span></h3>
+               <h3 className="text-5xl md:text-8xl lg:text-[10vw] font-display uppercase tracking-tighter leading-none italic">Regional <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Expertise.</span></h3>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -109,7 +109,7 @@ const About = () => {
                      </div>
                      <div className="space-y-6">
                         <span className="text-[10px] font-bold uppercase tracking-widest  italic font-serif group-hover:text-yellow-500 transition-colors">{item.label}</span>
-                        <h4 className="text-4xl font-display leading-[0.9] tracking-tighter group-hover:text-yellow-500 transition-all duration-700 italic">{item.val}</h4>
+                        <h4 className="text-3xl md:text-4xl font-display leading-[0.9] tracking-tighter group-hover:text-yellow-500 transition-all duration-700 italic">{item.val}</h4>
                         <p className="text-[13px]  group-hover:opacity-100 transition-all duration-700 font-serif italic leading-loose ">{item.desc}</p>
                      </div>
                   </motion.div>
@@ -122,7 +122,7 @@ const About = () => {
       <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
          <div className="max-w-4xl mx-auto space-y-20 py-20 relative isolate">
              <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Our Work</h4>
-            <h4 className="text-6xl md:text-[11vw] font-display italic leading-none tracking-tighter mix-blend-exclusion">Let's Build your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Project.</span></h4>
+            <h4 className="text-5xl md:text-7xl lg:text-[11vw] font-display italic leading-none tracking-tighter mix-blend-exclusion">Let's Build your <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Project.</span></h4>
             <div className="pt-16">
                <a href="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-brown/40 transition-all duration-700 interactive flex items-center justify-center gap-10 mx-auto w-fit shadow-[0_0_100px_rgba(197,163,99,0.2)]">
                   Start a Project <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-700" size={24} strokeWidth={1} />
