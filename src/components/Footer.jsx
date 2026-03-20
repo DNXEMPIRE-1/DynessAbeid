@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="relative min-h-screen py-40 px-6 md:px-20 lg:px-32 z-10 flex flex-col justify-between items-center bg-brown text-center  overflow-hidden border-t border-cream/10">
+    <footer className="relative min-h-screen py-20 md:py-40 px-6 md:px-20 lg:px-32 z-10 flex flex-col justify-between items-center bg-brown text-center  overflow-hidden border-t border-cream/10">
       
       {/* Editorial Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
@@ -22,8 +22,8 @@ const Footer = () => {
             <span className="text-[10px] font-bold uppercase tracking-[0.8em] text-yellow-500 animate-pulse flex items-center justify-center gap-4">
                <Plus size={10} /> Work with us <Plus size={10} />
             </span>
-            <a href="mailto:hello@dyness.pro" className="group text-5xl md:text-[10vw] font-serif italic font-black leading-none tracking-tighter hover:text-yellow-500 transition-colors interactive flex items-center gap-8" data-cursor="WRITE">
-               hello@dyness.pro
+            <a href="mailto:heydyness@gmail.com" className="group text-[8vw] md:text-[10vw] font-serif italic font-black leading-none tracking-tighter hover:text-yellow-500 transition-colors interactive flex items-center justify-center lg:justify-start gap-8" data-cursor="WRITE">
+               heydyness@gmail.com
                <div className="hidden lg:flex size-24 rounded-full border border-gold/20 items-center justify-center group-hover:bg-gold group-hover:text-black transition-all">
                   <ArrowUpRight size={40} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                </div>
@@ -35,17 +35,17 @@ const Footer = () => {
 
          <div className="w-full h-px bg-charcoal/10" />
 
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-24 w-full text-left">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 w-full text-center md:text-left">
             <div className="space-y-8">
                <h5 className="text-[10px] font-bold uppercase tracking-widest text-yellow-500 ">Our Presence</h5>
-               <div className="flex flex-col gap-4 font-serif italic text-3xl font-black">
-                  <p className="hover:text-yellow-500 transition-colors cursor-pointer">Dar Es Salaam, TZ</p>
-                  <p className="hover:text-yellow-500 transition-colors cursor-pointer">Nairobi, KE</p>
-                  <p className="">East African Region</p>
+               <div className="flex flex-col gap-4 font-serif italic text-2xl md:text-3xl font-black">
+                  <p className="hover:text-yellow-500 transition-colors cursor-pointer">Nairobi, Kenya</p>
+                  <a href="tel:+254792751109" className="hover:text-yellow-500 transition-colors cursor-pointer text-base md:text-xl mt-4">+254 792 751 109</a>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-yellow-500/60 mt-2">(WhatsApp & Calls)</p>
                </div>
             </div>
 
-            <div className="space-y-8">
+           {/*<div className="space-y-8">
                <h5 className="text-[10px] font-bold uppercase tracking-widest text-yellow-500 ">Find us</h5>
                <div className="flex flex-col gap-6 text-[11px] font-bold tracking-[0.3em] uppercase">
                   <a href="#" className="flex items-center gap-4 hover:text-yellow-500 transition-colors interactive group">
@@ -58,9 +58,9 @@ const Footer = () => {
                      <MousePointer2 size={14} className=" group-hover:opacity-100" /> Behance Showcase
                   </a>
                </div>
-            </div>
+            </div>*/}
 
-            <div className="space-y-8 md:text-right">
+            <div className="space-y-8 md:text-right text-center">
                <h5 className="text-[10px] font-bold uppercase tracking-widest text-yellow-500 ">Creative Studio</h5>
                <div className="text-[10px] font-bold tracking-[0.2em] uppercase space-y-4">
                   <p className=" italic font-serif">© 2026 Dyness Kazala</p>
