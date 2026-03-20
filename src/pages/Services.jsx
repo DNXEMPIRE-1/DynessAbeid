@@ -29,7 +29,7 @@ const Services = () => {
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/80 mb-12 flex items-center justify-center gap-8 italic">
              <Sparkles size={14} className="" /> Our Services <Sparkles size={14} className="" />
           </span>
-          <h1 className="text-[12vw] md:text-[10vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
+          <h1 className="text-[clamp(3.5rem,15vw,6rem)] md:text-[10vw] lg:text-[11vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
              Our <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Expertise.</span>
           </h1>
           <p className="max-w-4xl mt-24 text-2xl md:text-3xl font-serif italic /60 leading-relaxed font-light mx-auto border-x border-gold/20 px-16 uppercase tracking-widest">
@@ -80,8 +80,8 @@ const Services = () => {
                        {React.cloneElement(serv.icon, { size: 40, strokeWidth: 1 })}
                     </div>
                     <div className="space-y-8">
-                       <h3 className="text-4xl md:text-6xl font-display uppercase italic tracking-tighter group-hover:text-yellow-500 transition-colors duration-700 leading-none">{serv.title}</h3>
-                       <p className="text-xl md:text-2xl  italic font-serif leading-relaxed font-light group-hover:opacity-100 group-hover: transition-all duration-700">
+                       <h3 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase italic tracking-tighter group-hover:text-yellow-500 transition-colors duration-700 leading-none">{serv.title}</h3>
+                       <p className="text-lg md:text-xl lg:text-2xl italic font-serif leading-relaxed font-light group-hover:opacity-100 transition-all duration-700">
                           {serv.desc}
                        </p>
                     </div>
@@ -106,7 +106,7 @@ const Services = () => {
       <section className="section-v-pad px-6 md:px-20 lg:px-32 bg-brown/50 relative">
          <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-24">
             <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Core Values</h4>
-            <h5 className="text-5xl md:text-[11vw] font-display uppercase tracking-tighter italic leading-none mix-blend-exclusion">Visual <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Design.</span></h5>
+            <h5 className="text-5xl md:text-8xl lg:text-[11vw] font-display uppercase tracking-tighter italic leading-none mix-blend-exclusion">Visual <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Design.</span></h5>
             <p className="text-2xl md:text-3xl font-serif italic  font-light max-w-4xl leading-relaxed  border-x border-gold/10 px-12">
                Bridging regional authority with world-class <span className="text-yellow-500 font-bold">creative depth.</span>
             </p>
@@ -133,7 +133,7 @@ const Services = () => {
          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-24">
             <div className="space-y-10 text-center lg:text-left">
                <h4 className="text-[11px] font-bold uppercase tracking-[1.5em] text-yellow-500/60 italic">Contact Us</h4>
-               <h5 className="text-5xl md:text-[8vw] font-display uppercase italic leading-none mix-blend-exclusion">Get in <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Touch.</span></h5>
+               <h5 className="text-5xl md:text-7xl lg:text-[8vw] font-display uppercase italic leading-none mix-blend-exclusion">Get in <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Touch.</span></h5>
                <p className=" font-serif italic text-2xl md:text-3xl font-light ">We can help with your next project.</p>
             </div>
             <Link to="/contact" className="group bg-gold text-white px-24 py-12 rounded-full font-display uppercase tracking-widest text-[14px] hover:bg-brown/40 transition-all duration-700 interactive flex items-center justify-center gap-10 shadow-[0_0_100px_rgba(197,163,99,0.3)]">
