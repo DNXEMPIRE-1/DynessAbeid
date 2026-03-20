@@ -62,7 +62,7 @@ const Projects = () => {
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-yellow-500/60 mb-12 flex items-center justify-center gap-8 italic">
              <Plus size={12} className="" /> Our Portfolio <Plus size={12} className="" />
           </span>
-          <h1 className="text-[14vw] md:text-[10vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
+          <h1 className="text-[clamp(3.5rem,16vw,6rem)] md:text-[10vw] font-display uppercase leading-[0.8] tracking-tighter italic mix-blend-exclusion mb-12">
              Our <br /> <span className="text-yellow-500 font-serif not-italic  uppercase">Gallery.</span>
           </h1>
           <p className="max-w-4xl mt-12 text-2xl md:text-3xl font-serif italic /60 leading-relaxed font-light mx-auto border-x border-gold/20 px-12 uppercase tracking-wide">
@@ -187,7 +187,7 @@ const Projects = () => {
       {/* 🚀 THE NEXT EXHIBITION - Final Engagement */}
       <section className="section-v-pad px-6 md:px-20 lg:px-32 text-center bg-brown">
           <div className="max-w-5xl mx-auto glass-card p-24 md:p-32 rounded-[100px] space-y-16 border-gold/10 relative overflow-hidden bg-charcoal/[0.01]">
-            <h4 className="text-5xl md:text-[9vw] font-display uppercase tracking-tighter leading-none italic mix-blend-exclusion">Let's Start a <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Project.</span></h4>
+            <h4 className="text-5xl md:text-8xl lg:text-[9vw] font-display uppercase tracking-tighter leading-none italic mix-blend-exclusion">Let's Start a <br /> <span className="text-yellow-500 font-serif not-italic  uppercase tracking-tight">Project.</span></h4>
              <p className="text-xl md:text-3xl font-serif italic /80 max-w-2xl mx-auto leading-relaxed font-light border-x border-gold/20 px-16 italic">
                 Ready to transform institutional metrics into <span className="text-yellow-500 font-bold">visual poetry?</span>
              </p>
